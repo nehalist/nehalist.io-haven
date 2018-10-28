@@ -1,7 +1,7 @@
 {
-  "name": "haven",
+  "name": "nehalist.io",
   "version": "1.0.0",
-  "description": "A Ghost theme",
+  "description": "Customized Haven theme",
   "main": "index.js",
   "scripts": {
     "gscan": "gscan .",
