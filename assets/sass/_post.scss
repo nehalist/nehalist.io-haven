@@ -123,6 +123,7 @@
 
       img {
         border-radius: $general-border-radius;
+        display: block;
         opacity: 1;
         transition: opacity 1s;
         margin: 30px auto;
