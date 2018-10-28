@@ -122,8 +122,11 @@
       box-shadow: none;
 
       img {
+        border-radius: $general-border-radius;
         opacity: 1;
         transition: opacity 1s;
+        margin: 30px auto;
+        max-width: 100%;
 
         &:hover {
           opacity: .8;
@@ -131,7 +134,6 @@
       }
     }
 
-    .lightbox,
     & > p {
       img {
         border-radius: $general-border-radius;
