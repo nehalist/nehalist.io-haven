@@ -104,10 +104,21 @@
                             </div>
                         </section>
 
-                        {{!
                         <section class="post__comments" id="comments">
+                            <div id="disqus_thread"></div>
+                            <script>
+                                var disqus_config = function () {
+                                    this.page.url = '{{url absolute="true"}}';
+                                    this.page.identifier = 'ghost-{{comment_id}}';
+                                };
+                                (function() {
+                                    var d = document, s = d.createElement('script');
+                                    s.src = 'https://nehalist.disqus.com/embed.js';
+                                    s.setAttribute('data-timestamp', +new Date());
+                                    (d.head || d.body).appendChild(s);
+                                })();
+                            </script>
                         </section>
-                        }}
                     </article>
                 {{/post}}
             </main>
