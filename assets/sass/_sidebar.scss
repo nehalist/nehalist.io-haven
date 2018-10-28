@@ -35,6 +35,11 @@
     }
   }
 
+  &__widget-ad {
+    display: flex;
+    justify-content: center;
+  }
+
   &__widget-title {
     font-size: 16px;
     font-weight: bold;
