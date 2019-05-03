@@ -113,4 +113,8 @@
   &--for-author {
     text-align: left;
   }
+
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
 }

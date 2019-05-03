@@ -33,6 +33,10 @@ a {
 .content {
   flex-grow: 1;
   margin-top: 25px;
+
+  @include media-breakpoint-down(md) {
+    padding-top: 45px;
+  }
 }
 
 .no-header {
@@ -82,4 +86,14 @@ a {
 .google-auto-placed {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.responsive-ad {
+  margin: 50px auto;
+  width: 280px;
+  height: 240px;
+
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
 }

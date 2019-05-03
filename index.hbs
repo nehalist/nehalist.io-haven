@@ -11,6 +11,18 @@
                 <div class="posts">
                     {{#foreach posts}}
                         {{> "post-preview"}}
+
+                        {{#if @first}}
+                            <div class="responsive-ad">
+                                <ins class="adsbygoogle"
+                                     style="display:inline-block;width:280px;height:240px"
+                                     data-ad-client="ca-pub-4562676656733324"
+                                     data-ad-slot="7405369341"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        {{/if}}
                     {{/foreach}}
                 </div>
 

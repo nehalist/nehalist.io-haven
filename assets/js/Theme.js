@@ -9,6 +9,7 @@ export class Theme {
     this.$blogTitle = $('.blog-title');
     this.$sidebar = $('.sidebar');
     this.$content = $('#content');
+    this.$header = $('.header');
 
     if (this.$sidebar.length) {
       this.initialSidebarWidth = $('.sidebar-container').width();
@@ -51,7 +52,10 @@ export class Theme {
   logoSwapper() {
     const scrollTop = this.$document.scrollTop();
     const $ref = this.$logo.length ? this.$logo : this.$blogTitle;
-    const padding = (scrollTop > $ref.offset().top + $ref.height()) ? 0 : '30px';
+    let padding = (scrollTop > $ref.offset().top + $ref.height()) ? 0 : '30px';
+    if (! this.$header.is(':visible')) {
+      padding = 0;
+    }
     this.$logoContainer.css('padding-top', padding);
   }
 
